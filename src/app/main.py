@@ -1,4 +1,4 @@
-from app.db import get_session
+from app.db.postgres import get_session
 from app.models import Song, SongCreate
 from fastapi import Depends, FastAPI
 from sqlalchemy.ext.asyncio import AsyncSession
